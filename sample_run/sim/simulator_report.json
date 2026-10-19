@@ -3,11 +3,11 @@
   "triggered_users": 1746,
   "events_written": 31194,
   "counts": {
-    "actions_total": 77,
+    "actions_total": 75,
     "organic_purchases_scripted": 36,
     "push_clicked": 1,
-    "push_delivered": 62,
-    "push_requested": 72,
+    "push_delivered": 60,
+    "push_requested": 70,
     "push_undeliverable_token": 10,
     "whatsapp_delivered": 5,
     "whatsapp_requested": 5
@@ -19,7 +19,7 @@
       "problem": "frequency_cap_exceeded"
     },
     {
-      "action_id": "A-0062",
+      "action_id": "A-0061",
       "user_id": "U-04276",
       "problem": "frequency_cap_exceeded"
     }

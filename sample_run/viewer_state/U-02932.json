@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:30:43.945Z"
+    "updated_at": "2026-10-19T06:39:33.515Z"
   },
   "facts": [
     {
@@ -66,14 +66,14 @@
         ]
       },
       "content": [
-        "title:T1393",
-        "title:T1437",
-        "title:T1424",
+        "title:T1419",
         "title:T1412",
-        "title:T1425",
-        "title:T1423",
-        "title:T1408",
-        "title:T1426"
+        "title:T1416",
+        "title:T1421",
+        "title:T1420",
+        "title:T1435",
+        "title:T1424",
+        "title:T1389"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G07_dialect_d6",
@@ -138,14 +138,14 @@
         ]
       },
       "content": [
-        "title:T1398",
-        "title:T1407",
-        "title:T1395",
-        "title:T1408",
-        "title:T1433",
-        "title:T1401",
-        "title:T1411",
-        "title:T1406"
+        "title:T1435",
+        "title:T1412",
+        "title:T1424",
+        "title:T1441",
+        "title:T1437",
+        "title:T1438",
+        "title:T1406",
+        "title:T1416"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G07_dialect_d6",
@@ -170,7 +170,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 11,
+      "decided_in_ms": 10,
       "decided_at": "2026-10-01T03:17:31.000Z",
       "status": "REJECTED",
       "arm": "agent",

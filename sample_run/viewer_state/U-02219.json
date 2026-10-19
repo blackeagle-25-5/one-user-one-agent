@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:31:47.942Z"
+    "updated_at": "2026-10-19T06:40:31.259Z"
   },
   "facts": [
     {
@@ -66,14 +66,14 @@
         ]
       },
       "content": [
-        "title:T0568",
-        "title:T0542",
-        "title:T0548",
-        "title:T0559",
-        "title:T0537",
-        "title:T0560",
-        "title:T0529",
-        "title:T0566"
+        "title:T0562",
+        "title:T0564",
+        "title:T0569",
+        "title:T0555",
+        "title:T0573",
+        "title:T0539",
+        "title:T0528",
+        "title:T0529"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
@@ -138,14 +138,14 @@
         ]
       },
       "content": [
-        "title:T0522",
-        "title:T0565",
-        "title:T0566",
-        "title:T0534",
-        "title:T0554",
-        "title:T0538",
-        "title:T0543",
-        "title:T0533"
+        "title:T0561",
+        "title:T0523",
+        "title:T0531",
+        "title:T0544",
+        "title:T0540",
+        "title:T0530",
+        "title:T0525",
+        "title:T0522"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
@@ -170,7 +170,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 14,
+      "decided_in_ms": 12,
       "decided_at": "2026-10-01T05:53:44.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -206,14 +206,14 @@
         ]
       },
       "content": [
-        "title:T0523",
+        "title:T0540",
+        "title:T0570",
         "title:T0531",
-        "title:T0525",
-        "title:T0528",
-        "title:T0533",
+        "title:T0522",
         "title:T0573",
-        "title:T0556",
-        "title:T0546"
+        "title:T0544",
+        "title:T0525",
+        "title:T0529"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
@@ -238,7 +238,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 18,
+      "decided_in_ms": 15,
       "decided_at": "2026-10-01T12:47:33.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -274,14 +274,14 @@
         ]
       },
       "content": [
-        "title:T0521",
+        "title:T0546",
+        "title:T0565",
+        "title:T0567",
+        "title:T0575",
         "title:T0545",
-        "title:T0564",
-        "title:T0573",
-        "title:T0576",
-        "title:T0555",
-        "title:T0572",
-        "title:T0548"
+        "title:T0571",
+        "title:T0566",
+        "title:T0555"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
@@ -306,7 +306,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 20,
+      "decided_in_ms": 19,
       "decided_at": "2026-10-01T18:17:35.000Z",
       "status": "REJECTED",
       "arm": "agent",

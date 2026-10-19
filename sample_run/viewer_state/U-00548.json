@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:30:49.437Z"
+    "updated_at": "2026-10-19T06:39:38.587Z"
   },
   "facts": [
     {
@@ -55,14 +55,14 @@
         "conflicts": []
       },
       "content": [
-        "title:T1226",
         "title:T1223",
-        "title:T1194",
-        "title:T1190",
+        "title:T1192",
+        "title:T1211",
         "title:T1206",
-        "title:T1225",
+        "title:T1186",
+        "title:T1204",
         "title:T1213",
-        "title:T1179"
+        "title:T1196"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d5",
@@ -90,7 +90,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 10,
+      "decided_in_ms": 11,
       "decided_at": "2026-09-30T18:36:53.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -124,14 +124,14 @@
         "conflicts": []
       },
       "content": [
-        "title:T1181",
-        "title:T1188",
+        "title:T1177",
+        "title:T1228",
+        "title:T1186",
+        "title:T1199",
         "title:T1201",
-        "title:T1217",
-        "title:T1214",
-        "title:T1180",
-        "title:T1189",
-        "title:T1219"
+        "title:T1187",
+        "title:T1208",
+        "title:T1206"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d5",
@@ -155,7 +155,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 12,
+      "decided_in_ms": 10,
       "decided_at": "2026-10-01T04:46:16.000Z",
       "status": "REJECTED",
       "arm": "agent",

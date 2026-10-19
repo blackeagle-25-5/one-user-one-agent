@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:30:51.446Z"
+    "updated_at": "2026-10-19T06:39:40.382Z"
   },
   "facts": [
     {
@@ -64,14 +64,14 @@
         "conflicts": []
       },
       "content": [
-        "title:T1210",
-        "title:T1195",
-        "title:T1204",
+        "title:T1185",
+        "title:T1211",
+        "title:T1193",
+        "title:T1198",
         "title:T1221",
-        "title:T1214",
-        "title:T1206",
-        "title:T1226",
-        "title:T1194"
+        "title:T1183",
+        "title:T1199",
+        "title:T1187"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G07_dialect_d5",
@@ -134,14 +134,14 @@
         "conflicts": []
       },
       "content": [
+        "title:T1217",
         "title:T1213",
-        "title:T1228",
-        "title:T1211",
+        "title:T1188",
+        "title:T1218",
         "title:T1195",
-        "title:T1177",
+        "title:T1190",
         "title:T1179",
-        "title:T1221",
-        "title:T1188"
+        "title:T1183"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G07_dialect_d5",
@@ -166,7 +166,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 11,
+      "decided_in_ms": 10,
       "decided_at": "2026-10-01T04:47:42.000Z",
       "status": "REJECTED",
       "arm": "agent",

@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:31:29.425Z"
+    "updated_at": "2026-10-19T06:40:14.651Z"
   },
   "facts": [],
   "decisions": [
@@ -40,7 +40,7 @@
         "failed": [],
         "notes": []
       },
-      "decided_in_ms": 4,
+      "decided_in_ms": 5,
       "decided_at": "2026-09-30T18:37:55.000Z",
       "status": "PUBLISHED",
       "arm": "holdout",
@@ -77,7 +77,7 @@
         "failed": [],
         "notes": []
       },
-      "decided_in_ms": 5,
+      "decided_in_ms": 4,
       "decided_at": "2026-10-01T12:00:39.000Z",
       "status": "PUBLISHED",
       "arm": "holdout",
@@ -114,7 +114,7 @@
         "failed": [],
         "notes": []
       },
-      "decided_in_ms": 5,
+      "decided_in_ms": 4,
       "decided_at": "2026-10-01T15:02:03.000Z",
       "status": "PUBLISHED",
       "arm": "holdout",

@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:31:46.693Z"
+    "updated_at": "2026-10-19T06:40:30.067Z"
   },
   "facts": [
     {
@@ -57,14 +57,14 @@
         ]
       },
       "content": [
-        "title:T0903",
-        "title:T0914",
-        "title:T0905",
-        "title:T0904",
+        "title:T0906",
+        "title:T0907",
         "title:T0913",
-        "title:T0911",
+        "title:T0904",
         "title:T0909",
-        "title:T0901"
+        "title:T0901",
+        "title:T0911",
+        "title:T0908"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
@@ -92,7 +92,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 10,
+      "decided_in_ms": 11,
       "decided_at": "2026-09-30T18:32:59.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -129,14 +129,14 @@
         ]
       },
       "content": [
-        "title:T0909",
-        "title:T0913",
-        "title:T0910",
-        "title:T0906",
-        "title:T0911",
-        "title:T0904",
         "title:T0907",
-        "title:T0903"
+        "title:T0904",
+        "title:T0901",
+        "title:T0903",
+        "title:T0908",
+        "title:T0909",
+        "title:T0914",
+        "title:T0906"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
@@ -160,7 +160,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 12,
+      "decided_in_ms": 10,
       "decided_at": "2026-10-01T06:18:42.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -196,13 +196,13 @@
         ]
       },
       "content": [
-        "title:T0914",
-        "title:T0913",
-        "title:T0909",
-        "title:T0911",
         "title:T0903",
-        "title:T0904",
-        "title:T0902",
+        "title:T0911",
+        "title:T0906",
+        "title:T0914",
+        "title:T0910",
+        "title:T0909",
+        "title:T0901",
         "title:T0908"
       ],
       "confidence": 0.55,
@@ -227,7 +227,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 17,
+      "decided_in_ms": 15,
       "decided_at": "2026-10-01T11:31:37.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -264,14 +264,14 @@
         ]
       },
       "content": [
-        "title:T0901",
-        "title:T0909",
-        "title:T0907",
-        "title:T0908",
         "title:T0911",
+        "title:T0909",
+        "title:T0914",
         "title:T0906",
-        "title:T0902",
-        "title:T0905"
+        "title:T0908",
+        "title:T0904",
+        "title:T0905",
+        "title:T0901"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
@@ -295,7 +295,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 22,
+      "decided_in_ms": 15,
       "decided_at": "2026-10-01T14:26:42.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -331,14 +331,14 @@
         ]
       },
       "content": [
-        "title:T0905",
+        "title:T0910",
         "title:T0901",
-        "title:T0911",
+        "title:T0903",
+        "title:T0906",
+        "title:T0905",
+        "title:T0908",
         "title:T0914",
-        "title:T0907",
-        "title:T0904",
-        "title:T0902",
-        "title:T0910"
+        "title:T0909"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
@@ -362,7 +362,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 22,
+      "decided_in_ms": 16,
       "decided_at": "2026-10-01T15:12:31.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -398,14 +398,14 @@
         ]
       },
       "content": [
+        "title:T0905",
         "title:T0913",
-        "title:T0914",
-        "title:T0906",
-        "title:T0911",
+        "title:T0908",
         "title:T0907",
-        "title:T0909",
-        "title:T0903",
-        "title:T0904"
+        "title:T0914",
+        "title:T0902",
+        "title:T0911",
+        "title:T0901"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
@@ -429,7 +429,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 21,
+      "decided_in_ms": 19,
       "decided_at": "2026-10-01T17:45:11.000Z",
       "status": "REJECTED",
       "arm": "agent",

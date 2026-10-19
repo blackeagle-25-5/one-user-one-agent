@@ -1,6 +1,6 @@
 # Final Report — One User, One Agent
 
-*Generated at: 2026-10-19T06:32:04Z*
+*Generated at: 2026-10-19T06:40:45Z*
 
 ## Data Issues Found and Handled
 
@@ -23,18 +23,18 @@
 
 - Triggers processed: 2769
 - Decisions published: 2769
-- Actions published: 77
-- Abstentions (do-nothing): 2692
+- Actions published: 75
+- Abstentions (do-nothing): 2694
 - Holdout blocked: 1372
 - Fallbacks used: 3
 - Outcomes judged: 1388
 
 ## Latency
 
-- p50: 10 ms
-- p95: 22 ms
-- p99: 26 ms
-- Max: 51 ms
+- p50: 9 ms
+- p95: 18 ms
+- p99: 20 ms
+- Max: 67 ms
 - Within 60s budget: 100.0%
 - Failures (>5min): 0
 

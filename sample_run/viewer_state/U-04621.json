@@ -10,7 +10,7 @@
     "last_action_type": "PUSH",
     "last_action_at": "2026-10-01T11:52:30.592000+00:00",
     "last_action_day_ist": "2026-10-01",
-    "updated_at": "2026-10-19T06:31:13.834Z"
+    "updated_at": "2026-10-19T06:40:00.592Z"
   },
   "facts": [
     {
@@ -64,14 +64,14 @@
         "conflicts": []
       },
       "content": [
-        "title:T0564",
-        "title:T0522",
-        "title:T0559",
-        "title:T0542",
-        "title:T0570",
-        "title:T0530",
-        "title:T0568",
-        "title:T0572"
+        "title:T0575",
+        "title:T0565",
+        "title:T0524",
+        "title:T0561",
+        "title:T0523",
+        "title:T0528",
+        "title:T0560",
+        "title:T0550"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_for_goal_G06_dialect_d2",
@@ -100,7 +100,7 @@
         ],
         "notes": []
       },
-      "decided_in_ms": 11,
+      "decided_in_ms": 10,
       "decided_at": "2026-09-30T18:44:16.000Z",
       "status": "REJECTED",
       "arm": "agent",
@@ -134,7 +134,7 @@
         "conflicts": []
       },
       "content": [
-        "title:T0530"
+        "title:T0568"
       ],
       "confidence": 0.55,
       "confidence_reason": "mock_provider:rule_based_push_copy",
@@ -162,7 +162,7 @@
         "failed": [],
         "notes": []
       },
-      "decided_in_ms": 17,
+      "decided_in_ms": 14,
       "decided_at": "2026-10-01T11:52:30.000Z",
       "status": "PUBLISHED",
       "arm": "agent",
@@ -174,12 +174,12 @@
       "action_payload": {
         "type": "push",
         "dialect": "d2",
-        "title_id": "T0530",
+        "title_id": "T0568",
         "text": {
           "title": "We missed you!",
-          "body": "Come back and watch Tela Sagi — it's waiting for you."
+          "body": "Come back and watch Neya Kadhana — it's waiting for you."
         },
-        "deeplink": "ott://title/T0530",
+        "deeplink": "ott://title/T0568",
         "send_at": "2026-10-01T11:52:30.000Z"
       },
       "latency_status": "OK"

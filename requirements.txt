@@ -2,3 +2,4 @@
 # All core logic uses Python standard library only.
 # These are optional extras for PDF reading (already installed) and testing.
 PyPDF2>=3.0.0     # for reading the assignment PDF (dev only)
+pytest>=7.0.0     # for running automated test suite

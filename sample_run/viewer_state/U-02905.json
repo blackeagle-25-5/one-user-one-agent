@@ -10,7 +10,7 @@
     "last_action_type": null,
     "last_action_at": null,
     "last_action_day_ist": null,
-    "updated_at": "2026-10-19T06:30:39.114Z"
+    "updated_at": "2026-10-19T06:39:28.943Z"
   },
   "facts": [
     {
@@ -87,7 +87,7 @@
         "failed": [],
         "notes": []
       },
-      "decided_in_ms": 9,
+      "decided_in_ms": 10,
       "decided_at": "2026-09-30T18:40:57.000Z",
       "status": "PUBLISHED",
       "arm": "agent",
