@@ -1,0 +1,188 @@
+{
+  "viewer": {
+    "user_id": "U-04621",
+    "arm": "agent",
+    "current_goal_id": "G06",
+    "goal_started_at": "2026-10-01T11:52:30.000Z",
+    "goal_deadline": "2026-10-15T11:52:30.000Z",
+    "goal_success_signal": "purchase_completed:any paid plan",
+    "goal_status": "open",
+    "last_action_type": "PUSH",
+    "last_action_at": "2026-10-01T11:52:30.592000+00:00",
+    "last_action_day_ist": "2026-10-01",
+    "updated_at": "2026-10-19T06:31:13.834Z"
+  },
+  "facts": [
+    {
+      "id": 17,
+      "user_id": "U-04621",
+      "fact_key": "event",
+      "fact_value": "event:367e3d64-a396-493d-a54a-26419d0daefe:subscription_lapsed",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T11:52:30.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 16,
+      "user_id": "U-04621",
+      "fact_key": "profile",
+      "fact_value": "profile:U-04621:signup_at",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T11:52:30.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 15,
+      "user_id": "U-04621",
+      "fact_key": "trigger",
+      "fact_value": "trigger:b677f756-cd82-4a2b-a83d-e7b2ee394272:app_dialect",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T11:52:30.000Z",
+      "freshness_note": ""
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D-DF918504",
+      "viewer_id": "U-04621",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "df918504-087e-4344-a122-3a8387e6ce93",
+        "received_at": "2026-09-30T18:44:16.255Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "G06",
+        "name": "reactivate_lapsed_14d",
+        "deadline": "2026-10-14T18:44:16.000Z",
+        "success_signal": "purchase_completed:any paid plan"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0564",
+        "title:T0522",
+        "title:T0559",
+        "title:T0542",
+        "title:T0570",
+        "title:T0530",
+        "title:T0568",
+        "title:T0572"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G06_dialect_d2",
+      "evidence": [
+        "trigger:df918504-087e-4344-a122-3a8387e6ce93:app_dialect",
+        "profile:U-04621:notifications_opt_in",
+        "event:367e3d64-a396-493d-a54a-26419d0daefe:subscription_lapsed",
+        "profile:U-04621:signup_at"
+      ],
+      "assumptions": [
+        "Goal G07 rule interpretation: Eligibility: 'started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days.' Interpretation: viewer has at least one in_progress_slug (started but not completed) and the last play_started for that slug was ≥3 days before the trigger.",
+        "Goal G11 rule interpretation: Success event: 'tv_app_open'. This event does not appear in the historical events stream. Assumption: the platform will emit it during the simulator run; we include the goal but mark it lower priority.",
+        "Goal G10 (meaningful_engagement_7d) skipped: success event is null in the data; cannot judge outcome"
+      ],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 11,
+      "decided_at": "2026-09-30T18:44:16.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-B677F756",
+      "viewer_id": "U-04621",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "b677f756-cd82-4a2b-a83d-e7b2ee394272",
+        "received_at": "2026-10-01T11:52:30.592Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "G06",
+        "name": "reactivate_lapsed_14d",
+        "deadline": "2026-10-15T11:52:30.000Z",
+        "success_signal": "purchase_completed:any paid plan"
+      },
+      "action": "PUSH",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T0530"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_push_copy",
+      "evidence": [
+        "trigger:b677f756-cd82-4a2b-a83d-e7b2ee394272:app_dialect",
+        "profile:U-04621:notifications_opt_in",
+        "event:367e3d64-a396-493d-a54a-26419d0daefe:subscription_lapsed",
+        "profile:U-04621:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "push_consent_ok",
+          "outside_quiet_hours",
+          "frequency_cap_ok",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "push_title_length_ok",
+          "push_body_length_ok",
+          "no_forbidden_phrases",
+          "deeplink_format_ok"
+        ],
+        "failed": [],
+        "notes": []
+      },
+      "decided_in_ms": 17,
+      "decided_at": "2026-10-01T11:52:30.000Z",
+      "status": "PUBLISHED",
+      "arm": "agent",
+      "model_calls": 2,
+      "tool_calls": 2,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": null,
+      "action_payload": {
+        "type": "push",
+        "dialect": "d2",
+        "title_id": "T0530",
+        "text": {
+          "title": "We missed you!",
+          "body": "Come back and watch Tela Sagi — it's waiting for you."
+        },
+        "deeplink": "ott://title/T0530",
+        "send_at": "2026-10-01T11:52:30.000Z"
+      },
+      "latency_status": "OK"
+    }
+  ]
+}

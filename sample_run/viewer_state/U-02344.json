@@ -1,0 +1,445 @@
+{
+  "viewer": {
+    "user_id": "U-02344",
+    "arm": "agent",
+    "current_goal_id": "G05",
+    "goal_started_at": "2026-10-01T17:45:11.000Z",
+    "goal_deadline": "2026-10-08T17:45:11.000Z",
+    "goal_success_signal": "purchase_completed:is_trial = false",
+    "goal_status": "open",
+    "last_action_type": null,
+    "last_action_at": null,
+    "last_action_day_ist": null,
+    "updated_at": "2026-10-19T06:31:46.693Z"
+  },
+  "facts": [
+    {
+      "id": 2,
+      "user_id": "U-02344",
+      "fact_key": "profile",
+      "fact_value": "profile:U-02344:signup_at",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T17:45:11.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 1,
+      "user_id": "U-02344",
+      "fact_key": "trigger",
+      "fact_value": "trigger:df7e6c25-339c-4e40-9a61-de037f1d15ac:app_dialect",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T17:45:11.000Z",
+      "freshness_note": ""
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D-9FFD7200",
+      "viewer_id": "U-02344",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "9ffd7200-d9e5-4fd0-8106-bb555fdf33cb",
+        "received_at": "2026-09-30T18:32:59.458Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "G05",
+        "name": "first_paid_7d",
+        "deadline": "2026-10-07T18:32:59.000Z",
+        "success_signal": "purchase_completed:is_trial = false"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0903",
+        "title:T0914",
+        "title:T0905",
+        "title:T0904",
+        "title:T0913",
+        "title:T0911",
+        "title:T0909",
+        "title:T0901"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
+      "evidence": [
+        "trigger:9ffd7200-d9e5-4fd0-8106-bb555fdf33cb:app_dialect",
+        "profile:U-02344:notifications_opt_in",
+        "profile:U-02344:signup_at"
+      ],
+      "assumptions": [
+        "Goal G07 rule interpretation: Eligibility: 'started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days.' Interpretation: viewer has at least one in_progress_slug (started but not completed) and the last play_started for that slug was ≥3 days before the trigger.",
+        "Goal G11 rule interpretation: Success event: 'tv_app_open'. This event does not appear in the historical events stream. Assumption: the platform will emit it during the simulator run; we include the goal but mark it lower priority.",
+        "Goal G10 (meaningful_engagement_7d) skipped: success event is null in the data; cannot judge outcome"
+      ],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 10,
+      "decided_at": "2026-09-30T18:32:59.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-AF345733",
+      "viewer_id": "U-02344",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "af345733-f9f3-4243-b5bf-c2cf0d2a4860",
+        "received_at": "2026-10-01T06:18:42.517Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "G05",
+        "name": "first_paid_7d",
+        "deadline": "2026-10-08T06:18:42.000Z",
+        "success_signal": "purchase_completed:is_trial = false"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1",
+          "campaign_deeplink:d4"
+        ]
+      },
+      "content": [
+        "title:T0909",
+        "title:T0913",
+        "title:T0910",
+        "title:T0906",
+        "title:T0911",
+        "title:T0904",
+        "title:T0907",
+        "title:T0903"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
+      "evidence": [
+        "trigger:af345733-f9f3-4243-b5bf-c2cf0d2a4860:app_dialect",
+        "profile:U-02344:notifications_opt_in",
+        "profile:U-02344:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 12,
+      "decided_at": "2026-10-01T06:18:42.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 2,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-3DBABF70",
+      "viewer_id": "U-02344",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "3dbabf70-3e9b-4998-b397-9eb4b859decf",
+        "received_at": "2026-10-01T11:31:37.818Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "G05",
+        "name": "first_paid_7d",
+        "deadline": "2026-10-08T11:31:37.000Z",
+        "success_signal": "purchase_completed:is_trial = false"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0914",
+        "title:T0913",
+        "title:T0909",
+        "title:T0911",
+        "title:T0903",
+        "title:T0904",
+        "title:T0902",
+        "title:T0908"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
+      "evidence": [
+        "trigger:3dbabf70-3e9b-4998-b397-9eb4b859decf:app_dialect",
+        "profile:U-02344:notifications_opt_in",
+        "profile:U-02344:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 17,
+      "decided_at": "2026-10-01T11:31:37.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 3,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-818DE0A8",
+      "viewer_id": "U-02344",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "818de0a8-8e86-4bc3-b00a-2bb62d48bf17",
+        "received_at": "2026-10-01T14:26:42.975Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "G05",
+        "name": "first_paid_7d",
+        "deadline": "2026-10-08T14:26:42.000Z",
+        "success_signal": "purchase_completed:is_trial = false"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1",
+          "campaign_deeplink:d6"
+        ]
+      },
+      "content": [
+        "title:T0901",
+        "title:T0909",
+        "title:T0907",
+        "title:T0908",
+        "title:T0911",
+        "title:T0906",
+        "title:T0902",
+        "title:T0905"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
+      "evidence": [
+        "trigger:818de0a8-8e86-4bc3-b00a-2bb62d48bf17:app_dialect",
+        "profile:U-02344:notifications_opt_in",
+        "profile:U-02344:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 22,
+      "decided_at": "2026-10-01T14:26:42.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 4,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-77FF802D",
+      "viewer_id": "U-02344",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "77ff802d-30f5-4f8d-a694-f8132a6ab2f4",
+        "received_at": "2026-10-01T15:12:31.104Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "G05",
+        "name": "first_paid_7d",
+        "deadline": "2026-10-08T15:12:31.000Z",
+        "success_signal": "purchase_completed:is_trial = false"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0905",
+        "title:T0901",
+        "title:T0911",
+        "title:T0914",
+        "title:T0907",
+        "title:T0904",
+        "title:T0902",
+        "title:T0910"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
+      "evidence": [
+        "trigger:77ff802d-30f5-4f8d-a694-f8132a6ab2f4:app_dialect",
+        "profile:U-02344:notifications_opt_in",
+        "profile:U-02344:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 22,
+      "decided_at": "2026-10-01T15:12:31.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 5,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-DF7E6C25",
+      "viewer_id": "U-02344",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "df7e6c25-339c-4e40-9a61-de037f1d15ac",
+        "received_at": "2026-10-01T17:45:11.722Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "G05",
+        "name": "first_paid_7d",
+        "deadline": "2026-10-08T17:45:11.000Z",
+        "success_signal": "purchase_completed:is_trial = false"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d3",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d1"
+        ]
+      },
+      "content": [
+        "title:T0913",
+        "title:T0914",
+        "title:T0906",
+        "title:T0911",
+        "title:T0907",
+        "title:T0909",
+        "title:T0903",
+        "title:T0904"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G05_dialect_d3",
+      "evidence": [
+        "trigger:df7e6c25-339c-4e40-9a61-de037f1d15ac:app_dialect",
+        "profile:U-02344:notifications_opt_in",
+        "profile:U-02344:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 21,
+      "decided_at": "2026-10-01T17:45:11.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 6,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    }
+  ]
+}

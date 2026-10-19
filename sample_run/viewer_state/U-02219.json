@@ -1,0 +1,322 @@
+{
+  "viewer": {
+    "user_id": "U-02219",
+    "arm": "agent",
+    "current_goal_id": "G08",
+    "goal_started_at": "2026-10-01T18:17:35.000Z",
+    "goal_deadline": "2026-10-08T18:17:35.000Z",
+    "goal_success_signal": "play_started:a title released in the 30 days before the goal start",
+    "goal_status": "open",
+    "last_action_type": null,
+    "last_action_at": null,
+    "last_action_day_ist": null,
+    "updated_at": "2026-10-19T06:31:47.942Z"
+  },
+  "facts": [
+    {
+      "id": 21,
+      "user_id": "U-02219",
+      "fact_key": "event",
+      "fact_value": "event:721b1263-0b58-4726-a45f-7af3ff572271:subscription_renewed",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T18:17:35.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 20,
+      "user_id": "U-02219",
+      "fact_key": "profile",
+      "fact_value": "profile:U-02219:signup_at",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T18:17:35.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 19,
+      "user_id": "U-02219",
+      "fact_key": "trigger",
+      "fact_value": "trigger:fc6974f2-0d84-49eb-bf34-636e97d8c1c8:app_dialect",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T18:17:35.000Z",
+      "freshness_note": ""
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D-35822CEA",
+      "viewer_id": "U-02219",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "35822cea-7a21-4591-9a47-07f549e1e1ed",
+        "received_at": "2026-09-30T18:50:12.683Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "G08",
+        "name": "try_new_release_7d",
+        "deadline": "2026-10-07T18:50:12.000Z",
+        "success_signal": "play_started:a title released in the 30 days before the goal start"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [
+        "title:T0568",
+        "title:T0542",
+        "title:T0548",
+        "title:T0559",
+        "title:T0537",
+        "title:T0560",
+        "title:T0529",
+        "title:T0566"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
+      "evidence": [
+        "trigger:35822cea-7a21-4591-9a47-07f549e1e1ed:app_dialect",
+        "profile:U-02219:notifications_opt_in",
+        "event:721b1263-0b58-4726-a45f-7af3ff572271:subscription_renewed",
+        "profile:U-02219:signup_at"
+      ],
+      "assumptions": [
+        "Goal G07 rule interpretation: Eligibility: 'started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days.' Interpretation: viewer has at least one in_progress_slug (started but not completed) and the last play_started for that slug was ≥3 days before the trigger.",
+        "Goal G11 rule interpretation: Success event: 'tv_app_open'. This event does not appear in the historical events stream. Assumption: the platform will emit it during the simulator run; we include the goal but mark it lower priority.",
+        "Goal G10 (meaningful_engagement_7d) skipped: success event is null in the data; cannot judge outcome"
+      ],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 10,
+      "decided_at": "2026-09-30T18:50:12.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-11212264",
+      "viewer_id": "U-02219",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "11212264-75b9-4a6e-8e8d-19e190cb63ca",
+        "received_at": "2026-10-01T05:53:44.285Z",
+        "event_age_s": 0
+      },
+      "goal": {
+        "id": "G08",
+        "name": "try_new_release_7d",
+        "deadline": "2026-10-08T05:53:44.000Z",
+        "success_signal": "play_started:a title released in the 30 days before the goal start"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [
+        "title:T0522",
+        "title:T0565",
+        "title:T0566",
+        "title:T0534",
+        "title:T0554",
+        "title:T0538",
+        "title:T0543",
+        "title:T0533"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
+      "evidence": [
+        "trigger:11212264-75b9-4a6e-8e8d-19e190cb63ca:app_dialect",
+        "profile:U-02219:notifications_opt_in",
+        "event:721b1263-0b58-4726-a45f-7af3ff572271:subscription_renewed",
+        "profile:U-02219:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 14,
+      "decided_at": "2026-10-01T05:53:44.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 2,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-EDDE84B7",
+      "viewer_id": "U-02219",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "edde84b7-ebeb-4c2a-bb04-0ab8ed99ad5e",
+        "received_at": "2026-10-01T12:47:33.994Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "G08",
+        "name": "try_new_release_7d",
+        "deadline": "2026-10-08T12:47:33.000Z",
+        "success_signal": "play_started:a title released in the 30 days before the goal start"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [
+        "title:T0523",
+        "title:T0531",
+        "title:T0525",
+        "title:T0528",
+        "title:T0533",
+        "title:T0573",
+        "title:T0556",
+        "title:T0546"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
+      "evidence": [
+        "trigger:edde84b7-ebeb-4c2a-bb04-0ab8ed99ad5e:app_dialect",
+        "profile:U-02219:notifications_opt_in",
+        "event:721b1263-0b58-4726-a45f-7af3ff572271:subscription_renewed",
+        "profile:U-02219:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 18,
+      "decided_at": "2026-10-01T12:47:33.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 3,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-FC6974F2",
+      "viewer_id": "U-02219",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "fc6974f2-0d84-49eb-bf34-636e97d8c1c8",
+        "received_at": "2026-10-01T18:17:35.591Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "G08",
+        "name": "try_new_release_7d",
+        "deadline": "2026-10-08T18:17:35.000Z",
+        "success_signal": "play_started:a title released in the 30 days before the goal start"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d2",
+        "source": "app_setting",
+        "conflicts": [
+          "profile:d3"
+        ]
+      },
+      "content": [
+        "title:T0521",
+        "title:T0545",
+        "title:T0564",
+        "title:T0573",
+        "title:T0576",
+        "title:T0555",
+        "title:T0572",
+        "title:T0548"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G08_dialect_d2",
+      "evidence": [
+        "trigger:fc6974f2-0d84-49eb-bf34-636e97d8c1c8:app_dialect",
+        "profile:U-02219:notifications_opt_in",
+        "event:721b1263-0b58-4726-a45f-7af3ff572271:subscription_renewed",
+        "profile:U-02219:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 20,
+      "decided_at": "2026-10-01T18:17:35.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 4,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    }
+  ]
+}

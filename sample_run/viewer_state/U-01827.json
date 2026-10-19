@@ -1,0 +1,182 @@
+{
+  "viewer": {
+    "user_id": "U-01827",
+    "arm": "agent",
+    "current_goal_id": "G07",
+    "goal_started_at": "2026-10-01T04:47:42.000Z",
+    "goal_deadline": "2026-10-04T04:47:42.000Z",
+    "goal_success_signal": "play_started:same content_slug as the unfinished series",
+    "goal_status": "open",
+    "last_action_type": null,
+    "last_action_at": null,
+    "last_action_day_ist": null,
+    "updated_at": "2026-10-19T06:30:51.446Z"
+  },
+  "facts": [
+    {
+      "id": 25,
+      "user_id": "U-01827",
+      "fact_key": "event",
+      "fact_value": "event:09e17577-515b-44c8-8f58-c134627775b9:subscription_renewed",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T04:47:42.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 24,
+      "user_id": "U-01827",
+      "fact_key": "profile",
+      "fact_value": "profile:U-01827:signup_at",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T04:47:42.000Z",
+      "freshness_note": ""
+    },
+    {
+      "id": 23,
+      "user_id": "U-01827",
+      "fact_key": "trigger",
+      "fact_value": "trigger:9b569b31-60b2-477a-865e-d570f0f67b40:app_dialect",
+      "source": "evidence_ref",
+      "received_at": "2026-10-01T04:47:42.000Z",
+      "freshness_note": ""
+    }
+  ],
+  "decisions": [
+    {
+      "decision_id": "D-0CC194C1",
+      "viewer_id": "U-01827",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "0cc194c1-8bd6-4f2b-b807-abe897cb5dc9",
+        "received_at": "2026-09-30T18:57:53.240Z",
+        "event_age_s": 2
+      },
+      "goal": {
+        "id": "G07",
+        "name": "resume_series_3d",
+        "deadline": "2026-10-03T18:57:53.000Z",
+        "success_signal": "play_started:same content_slug as the unfinished series"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1210",
+        "title:T1195",
+        "title:T1204",
+        "title:T1221",
+        "title:T1214",
+        "title:T1206",
+        "title:T1226",
+        "title:T1194"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G07_dialect_d5",
+      "evidence": [
+        "trigger:0cc194c1-8bd6-4f2b-b807-abe897cb5dc9:app_dialect",
+        "profile:U-01827:notifications_opt_in",
+        "event:09e17577-515b-44c8-8f58-c134627775b9:subscription_renewed",
+        "profile:U-01827:signup_at"
+      ],
+      "assumptions": [
+        "Goal G07 rule interpretation: Eligibility: 'started a show or micro-drama, has unwatched episodes left, and has not played it for 3 or more days.' Interpretation: viewer has at least one in_progress_slug (started but not completed) and the last play_started for that slug was ≥3 days before the trigger.",
+        "Goal G11 rule interpretation: Success event: 'tv_app_open'. This event does not appear in the historical events stream. Assumption: the platform will emit it during the simulator run; we include the goal but mark it lower priority.",
+        "Goal G10 (meaningful_engagement_7d) skipped: success event is null in the data; cannot judge outcome"
+      ],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 10,
+      "decided_at": "2026-09-30T18:57:53.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 1,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    },
+    {
+      "decision_id": "D-9B569B31",
+      "viewer_id": "U-01827",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "9b569b31-60b2-477a-865e-d570f0f67b40",
+        "received_at": "2026-10-01T04:47:42.013Z",
+        "event_age_s": 1
+      },
+      "goal": {
+        "id": "G07",
+        "name": "resume_series_3d",
+        "deadline": "2026-10-04T04:47:42.000Z",
+        "success_signal": "play_started:same content_slug as the unfinished series"
+      },
+      "action": "NONE",
+      "dialect": {
+        "used": "d5",
+        "source": "app_setting",
+        "conflicts": []
+      },
+      "content": [
+        "title:T1213",
+        "title:T1228",
+        "title:T1211",
+        "title:T1195",
+        "title:T1177",
+        "title:T1179",
+        "title:T1221",
+        "title:T1188"
+      ],
+      "confidence": 0.55,
+      "confidence_reason": "mock_provider:rule_based_for_goal_G07_dialect_d5",
+      "evidence": [
+        "trigger:9b569b31-60b2-477a-865e-d570f0f67b40:app_dialect",
+        "profile:U-01827:notifications_opt_in",
+        "event:09e17577-515b-44c8-8f58-c134627775b9:subscription_renewed",
+        "profile:U-01827:signup_at"
+      ],
+      "assumptions": [],
+      "checks": {
+        "passed": [
+          "not_holdout",
+          "dialect_match_ok",
+          "content_availability_ok",
+          "no_injection_flagged_titles",
+          "home_row_count_ok",
+          "no_continue_watching_row"
+        ],
+        "failed": [
+          "rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']"
+        ],
+        "notes": []
+      },
+      "decided_in_ms": 11,
+      "decided_at": "2026-10-01T04:47:42.000Z",
+      "status": "REJECTED",
+      "arm": "agent",
+      "model_calls": 1,
+      "tool_calls": 2,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "verifier_rejected: [\"rows_below_minimum_titles: ['row_1:popular_in_dialect(only_0_valid_titles)']\"]",
+      "action_payload": null,
+      "latency_status": "OK"
+    }
+  ]
+}

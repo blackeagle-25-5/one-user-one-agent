@@ -1,0 +1,129 @@
+{
+  "viewer": {
+    "user_id": "U-01268",
+    "arm": "holdout",
+    "current_goal_id": null,
+    "goal_started_at": null,
+    "goal_deadline": null,
+    "goal_success_signal": null,
+    "goal_status": "open",
+    "last_action_type": null,
+    "last_action_at": null,
+    "last_action_day_ist": null,
+    "updated_at": "2026-10-19T06:31:29.425Z"
+  },
+  "facts": [],
+  "decisions": [
+    {
+      "decision_id": "D-642B8D02",
+      "viewer_id": "U-01268",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "642b8d02-975e-491c-acd9-807e104a05a8",
+        "received_at": "2026-09-30T18:37:55.110Z",
+        "event_age_s": 1
+      },
+      "goal": null,
+      "action": "NONE",
+      "dialect": {
+        "used": null,
+        "source": null,
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.0,
+      "confidence_reason": "holdout_arm_receives_no_actions",
+      "evidence": [],
+      "assumptions": [],
+      "checks": {
+        "passed": [],
+        "failed": [],
+        "notes": []
+      },
+      "decided_in_ms": 4,
+      "decided_at": "2026-09-30T18:37:55.000Z",
+      "status": "PUBLISHED",
+      "arm": "holdout",
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "holdout_arm_receives_no_actions",
+      "action_payload": null
+    },
+    {
+      "decision_id": "D-72FACD38",
+      "viewer_id": "U-01268",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "72facd38-b662-4003-8204-3d94d862c01f",
+        "received_at": "2026-10-01T12:00:39.480Z",
+        "event_age_s": 0
+      },
+      "goal": null,
+      "action": "NONE",
+      "dialect": {
+        "used": null,
+        "source": null,
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.0,
+      "confidence_reason": "holdout_arm_receives_no_actions",
+      "evidence": [],
+      "assumptions": [],
+      "checks": {
+        "passed": [],
+        "failed": [],
+        "notes": []
+      },
+      "decided_in_ms": 5,
+      "decided_at": "2026-10-01T12:00:39.000Z",
+      "status": "PUBLISHED",
+      "arm": "holdout",
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "holdout_arm_receives_no_actions",
+      "action_payload": null
+    },
+    {
+      "decision_id": "D-222F2A3F",
+      "viewer_id": "U-01268",
+      "trigger": {
+        "event": "app_open",
+        "event_id": "222f2a3f-424e-42ef-9db4-e795b97f2a2f",
+        "received_at": "2026-10-01T15:02:03.765Z",
+        "event_age_s": 2
+      },
+      "goal": null,
+      "action": "NONE",
+      "dialect": {
+        "used": null,
+        "source": null,
+        "conflicts": []
+      },
+      "content": [],
+      "confidence": 0.0,
+      "confidence_reason": "holdout_arm_receives_no_actions",
+      "evidence": [],
+      "assumptions": [],
+      "checks": {
+        "passed": [],
+        "failed": [],
+        "notes": []
+      },
+      "decided_in_ms": 5,
+      "decided_at": "2026-10-01T15:02:03.000Z",
+      "status": "PUBLISHED",
+      "arm": "holdout",
+      "model_calls": 0,
+      "tool_calls": 0,
+      "rule_version": "2026-09-30",
+      "fallback_used": false,
+      "no_action_reason": "holdout_arm_receives_no_actions",
+      "action_payload": null
+    }
+  ]
+}
